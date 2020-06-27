@@ -1,8 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600&display=swap');
+@import url('Lato:ital@1&family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@400;600&display=swap');
+
 body {
-    background: #0d081b;
+    background-color: #0d081b;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
   }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+
+.container {
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.drakiri-header {
+  z-index: 1000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  height: 170px;
+}
+
+p {
+  color: #fff;
+  font-size: .75em;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  color: #fff; 
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+h5 {
+  color: #fff; 
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  font-size: .8em;
+}
+
+input {
+  background-color: #0d061c;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: .65em;
+  height: 28px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.btn-primary {
+  background-color: #1a0e60;
+  border: none;
+  font-size: .65em;
+  font-weight: 600;
+  font-family: 'Muli', sans-serif;
+  padding: 10px 47px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.btn-alt-primary {
+  background-color: #573cf5;
+}
+
+.hero {
+  height: 531px;
+  margin-top: -170px;
+  margin-left: 0;
+  background-image: url('../img/hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 150px;
+}
+
+.hero-text h4 {
+  margin-bottom: .2rem;
+}
+
+.logo-masthead {
+  width: 98%;
+}
+
+.header-logo {
+  margin-left: -65px;
+}
+
+.header-nav {
+  margin-top: 40px;
+}
+
+a, .header-nav a, .users-online {
+  color: #e8e0ff;
+}
+
+a:hover, .header-nav a:hover, .users-count, .green-text {
+  color: #8fff75;
+}
+
+.header-nav a, .users-online {
+  font-size: .74em;
+}
+
+.users-count, .users-online {
+  font-size: .74em;
+}
+
+.alt-font-green a, .hero-subtext a, .login-subtext a {
+  color: #8fff75;
+}
+
+.alt-font-green a:hover, .hero-subtext a:hover, .login-subtext a:hover {
+  color: #fff;
+}
+
+.hero-content {
+  width: 100%;
+  text-align: center;
+  padding-left: 160px;
+}
+
+.hero-content img {
+  max-width: 85px;
+}
+
+.hero-text {
+  margin-top: 22px;
+}
+
+.hero-subtext {
+  color: #eee;
+  font-size: .75em;
+  font-weight: 400;
+  line-height: .75em !important;
+}
+
+.login-panel {
+  background-color: #161131;
+  width: 220px;
+  margin: -83px 0 0 150px;
+  border-left: #000 5px solid;
+  height: 312px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.login-subtext {
+  color: #eee;
+  font-size: .65em;
+  font-weight: 400;
+  line-height: .75em !important;
+}
+
+.login-bottom-text {
+  color: #fff;
+  font-size: .57em;
+  margin-top: 60px;
+}
+
+.discord-icon {
+  width: 25px;
+}
+
+.main-content {
+  height: 350px;
+  background: url('../img/bg-clouds-blue2.png') top left;
+  margin-top: -152px;
+  border-top: #000 5px solid;
+  margin-left: 0;
+}
+
+.main-article {
+  margin: 60px 0 0 120px;
+  color: #fff;
+  width: 450px;
+}
+
+.italics-header-small {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+.serif-font-header {
+  color: #8f8af4;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+.main-article-text {
+  margin-top: 20px;
+}
+
+.character-inset {
+  background: url('../img/dragon.png') center no-repeat;
+  width: 350px;
+  height: 300px;
+  margin: -210px 0 0 620px;
+}
+
+.about-content {
+  height: 350px;
+  width: 341px;
+  background: #000008 url('../img/bg-about.png') top left;
+  border-top: #000 5px solid;
+  border-left: #000 5px solid;
+  margin: -5px 0 0 220px;
+  padding: 45px 0 0 50px;
+}
+
+.about-content h5 {
+  font-size: 1.2em;
+}
+
+.about-article-text {
+  margin-top: 20px;
+  width: 86%;
+}
+
+footer {
+  background-color: #0a080f;
+  height: 70px;
+  padding: 20px 0 0 15px;
+}
+
+.footer-copyright {
+  color: #665b8a;
+  font-size: .65em;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  margin-left:  60px;
+}
+
+.footer-nav {
+  color: #8e73ff;
+  font-size: .7em;
+  float: left;
+  margin: -36px 0 0 480px;
+}
+
+.footer-icon {
+  float: right;
+  margin: -50px 20px 10px 0;
+}
+
+.footer-icon img {
+  width: 52px;
+}

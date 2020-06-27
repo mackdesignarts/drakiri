@@ -9,25 +9,28 @@ import {
   Row,
   Col
 } from 'react-bootstrap'
+import footerLogo from '../../assets/img/logo-matte.png'
+import drakiriIcon from '../../assets/img/drakiri-icon.png'
 
 
 
 class Footer extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.currentYear = new Date().getFullYear()
+  }
+
   render() {
     return (
       <footer className="footer">
-        <Container>
-          <Row>
-            <Col md="2">
-              <div className="footer-logo">LOGO MARKER</div>
-            </Col>
-            <Col md="2">
-              <div className="footer-copyright">
-                COPYRIGHT MARKER
+              <div className="footer-logo">
+                <img src={ footerLogo } />
+                <span className="footer-copyright">
+                  Copyright &copy; { this.currentYear } Drakiri Inc.
+                </span>
               </div>
-            </Col>
-            <Col md="6" className="footer-nav">
-              <Nav>
+              <Nav className="footer-nav">
                 <NavItem>
                   <NavLink to="/welcome" tag={Link}>
                     Welcome to Drakiri
@@ -59,14 +62,9 @@ class Footer extends React.Component {
                   </NavLink>
                 </NavItem>
               </Nav>
-            </Col>
-            <Col md="2">
-              <Button className="footer-icon">
-                FOOTER DRAGON ICON MARKER
-              </Button>
-            </Col>
-          </Row>
-        </Container>
+              <div className="footer-icon">
+                <img src={ drakiriIcon } />
+              </div>
       </footer>
     )
   }
