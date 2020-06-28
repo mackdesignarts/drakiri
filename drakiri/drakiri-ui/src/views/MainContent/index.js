@@ -32,7 +32,7 @@ class MainContent extends Component {
               <p className="about-article-text">
                 Lorem ipsum bacon star wars monty python spam, et fin filet mignon.
               </p>
-              <button type="button" class="btn btn-primary">GET STARTED!</button>
+              <button type="button" class="btn btn-primary btn-alt-primary">GET STARTED!</button>
             </div>
           </Col>
         </Row>
